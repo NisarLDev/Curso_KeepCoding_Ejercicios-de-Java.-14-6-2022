@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="java.awt.Graphics"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.ejemplo.poo_25_5.Persona"/>
+    <fullyQualifiedTypeName name="com.ejemplo.poo3.Torta"/>
+    <fullyQualifiedTypeName name="com.ejemplo.poo_30_5.Calculo"/>
+    <fullyQualifiedTypeName name="com.ejemplo.mvc.model.Cliente"/>
+    <fullyQualifiedTypeName name="com.ejemplo.mvc.controller.ClienteController"/>
+    <fullyQualifiedTypeName name="com.ejemplo.mvc.view.ClienteView"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.ejemplo.crud_jdbc_9_6_2022.Conexion"/>
+    <fullyQualifiedTypeName name="com.ejemplo.crud_jdbc_9_6_2022.controller.UsuarioController"/>
+    <fullyQualifiedTypeName name="com.ejemplo.crud_jdbc_9_6_2022.model.Usuario"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+</qualifiedTypeNameHistroy>

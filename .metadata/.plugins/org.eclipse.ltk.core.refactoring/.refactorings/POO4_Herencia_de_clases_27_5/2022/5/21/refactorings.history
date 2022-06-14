@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change method &apos;public void com.ejemplo.herencia4.Autobus.setNumeroPlazas(int numeroPlazas)&apos; to &apos;public void setNumeroPlazas(int numeroPlazas)&apos;&#x0D;&#x0A;- Original project: &apos;POO4_Herencia_de_clases_27_5&apos;&#x0D;&#x0A;- Original element: &apos;com.ejemplo.herencia4.Autobus.setNumeroPlazas(...)&apos;&#x0D;&#x0A;- Changed parameters:&#x0D;&#x0A;     String numeroPlazas" delegate="false" deprecate="true" description="Change method &apos;setNumeroPlazas&apos;" flags="589830" id="org.eclipse.jdt.ui.change.method.signature" input="/src&lt;com.ejemplo.herencia4{Autobus.java[Autobus~setNumeroPlazas~QString;" name="setNumeroPlazas" parameter1="String numeroPlazas 0 int numeroPlazas false" stamp="1653645251339" version="1.0"/>
+</session>

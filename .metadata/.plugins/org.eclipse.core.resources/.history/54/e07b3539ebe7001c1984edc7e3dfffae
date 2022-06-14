@@ -1,0 +1,5 @@
+package com.ejemplo.crud_jdbc_9_6_2022;
+
+public class Conexion {
+
+}

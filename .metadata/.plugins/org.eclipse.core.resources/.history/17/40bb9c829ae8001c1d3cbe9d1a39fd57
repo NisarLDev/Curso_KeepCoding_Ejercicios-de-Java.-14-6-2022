@@ -1,0 +1,22 @@
+package com.ejemplo.crud_jdbc_9_6_2022;
+
+import com.ejemplo.crud_jdbc_9_6_2022.controller.UsuarioController;
+import com.ejemplo.crud_jdbc_9_6_2022.model.Usuario;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+			
+	//Conexion.conexion();				
+	UsuarioController usuario = new UsuarioController();			
+	Usuario usuario1 = new Usuario("Juan","ihoehfweof","Juan García","idosod@ididf.off");
+	usuario.insertar(usuario1);	
+		
+		
+	}	
+	
+
+}

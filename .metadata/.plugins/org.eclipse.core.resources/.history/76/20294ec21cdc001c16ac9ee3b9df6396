@@ -1,0 +1,14 @@
+package com.ejemplo.poo2_25_5;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Persona obj = new Persona(String "José", String "Gutierrez");
+		
+		obj.nombre=("José");
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.ejemplo.crud_jdbc_9_6_2022.controller;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.ejemplo.crud_jdbc_9_6_2022.Conexion;
+import com.ejemplo.crud_jdbc_9_6_2022.model.Usuario;
+
+public class UsuarioController {
+	
+	public void insertar(Usuario usuario) {
+		//crear la consultar sql para insertar datos
+		String sql= "INSERT INTO usuario(username,password,fullname,email) VALUES(?,?,?,?)";
+		//clase de java.sql para pasar una consulta sql a la base de datos
+		PreparedStatement statement;
+		
+		try {
+			//pasamos la conexion a base de datos y tambien la consulta en
+			//el valor string sql
+			statement=Conexion.conexion().prepareStatement(sql);
+			statement.setString(1,usuario.getUsername());
+			statement.setString(2,usuario.getPassword());
+			statement.setString(3,usuario.getFullname());
+			statement.setString(4,usuario.getEmail());
+
+
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

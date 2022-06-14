@@ -1,0 +1,5 @@
+package com.ejemplo.crud_jdbc_9_6_2022.modelo;
+
+public class Usuario {
+
+}

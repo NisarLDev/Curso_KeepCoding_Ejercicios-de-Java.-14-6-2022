@@ -1,0 +1,103 @@
+package com.ejemplo.crud_jdbc_9_6_2022.controller;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.ejemplo.crud_jdbc_9_6_2022.Conexion;
+import com.ejemplo.crud_jdbc_9_6_2022.model.Usuario;
+
+public class UsuarioController {
+	
+	public void insertar(Usuario usuario) {
+		//crear la consultar sql para insertar datos
+		String sql= "INSERT INTO usuario(username,password,fullname,email) VALUES(?,?,?,?)";
+		//clase de java.sql para pasar una consulta sql a la base de datos
+		PreparedStatement statement;
+		
+		try {
+			//pasamos la conexion a base de datos y tambien la consulta en
+			//el valor string sql
+			statement=Conexion.conexion().prepareStatement(sql);
+			statement.setString(1,usuario.getUsername());
+			statement.setString(2,usuario.getPassword());
+			statement.setString(3,usuario.getFullname());
+			statement.setString(4,usuario.getEmail());
+			
+			int rowsInserted = statement.executeUpdate();
+			if(rowsInserted >0) {
+				System.out.println("Los datos se insertaron correctamente en la base de datos");
+			}
+
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+		public void listarUsuario() {
+
+			
+			String sql = "SELECT * FROM usuario";
+			try {
+				Statement statement = Conexion.conexion().createStatement();
+				ResultSet result = statement.executeQuery(sql);
+				
+				int cont=0;
+				while(result.next()) {
+					String username = result.getString(2);
+					String password = result.getString(3);
+					String fullname = result.getString(4);
+					String email = result.getString(5);
+					cont++;
+					System.out.println("#usuario"+cont+"-"+username+"-"+password+"-"+fullname+"-"+email);
+
+				}
+					
+			} catch (SQLException e) {
+				// TODO: handle exception
+	
+		}
+}
+		
+
+		
+		
+		
+		
+		
+		
+		public void actualizar(Usuario usuario) {
+		
+			String sql = "UPDATE usuario SET username=?,password=?,fullname=?,email=? WHERE id=?";
+			PreparedStatement statement;
+			
+			//pasamos la conexion a base de datos y tambien la consulta en
+			//el valor string sql
+			try {
+				statement=Conexion.conexion().prepareStatement(sql);
+				statement.setString(1,usuario.getUsername());
+				statement.setString(2,usuario.getPassword());
+				statement.setString(3,usuario.getFullname());
+				statement.setString(4,usuario.getEmail());
+				statement.setInt(5,usuario.getId());
+				
+				int rowsInserted = statement.executeUpdate();
+				if(rowsInserted >0) {
+					System.out.println("Los datos se actualizaron correctamente en la base de datos");
+				}
+
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+
+		
+		
+		
+
+}
