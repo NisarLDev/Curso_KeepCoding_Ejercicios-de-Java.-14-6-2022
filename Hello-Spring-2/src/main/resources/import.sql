@@ -1,0 +1,10 @@
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Juan","Oller","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Maria","ladelbarrio","mla@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Pepito","Ruiz","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Carlos","Perez","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Lola","Pirez","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Marcelo","Rainiero","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Leomar","Leon","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Cristino","Rolando","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Allegra","kholl","jp@gmail.com",6321122,"2022-06-16");
+INSERT INTO clientes(nombre,apellido,email,telefono,create_at) VALUES ("Ragnar","Loubrok","jp@gmail.com",6321122,"2022-06-16");
